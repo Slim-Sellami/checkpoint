@@ -1,5 +1,3 @@
-pip install -r requirements.txt
-
 # Charger modèle
 @st.cache_resource
 def load_model():
