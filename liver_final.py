@@ -2,8 +2,12 @@ import streamlit as st
 import joblib
 import numpy as np
 
-# Charger modèle et scaler
-joblib.dump(model.rf, "model_rf.sav")
+# Charger modèle
+@st.cache_resource
+def load_model():
+    return joblib.load("model_rf.sav")
+
+model = load_model()
 #######
 st.title("Liver Disease Classification")
 
