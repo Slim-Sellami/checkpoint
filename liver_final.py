@@ -3,8 +3,7 @@ import joblib
 import numpy as np
 
 # Charger modèle et scaler
-model = joblib.load(r"/Users/slim/Downloads/model_rf.sav")
-
+joblib.dump(model.rf, "model_rf.sav")
 #######
 st.title("Liver Disease Classification")
 
