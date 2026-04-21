@@ -1,6 +1,7 @@
 import streamlit as st
 import joblib
 import numpy as np
+pip install -r requirements.txt
 
 # Charger modèle
 @st.cache_resource
@@ -8,6 +9,7 @@ def load_model():
     return joblib.load("model_rf.sav")
 
 model = load_model()
+
 #######
 st.title("Liver Disease Classification")
 
