@@ -1,6 +1,3 @@
-import streamlit as st
-import joblib
-import numpy as np
 pip install -r requirements.txt
 
 # Charger modèle
