@@ -1,3 +1,7 @@
+import streamlit as st
+import joblib
+import numpy as np
+
 # Charger modèle
 @st.cache_resource
 def load_model():
